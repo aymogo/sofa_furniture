@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Furniking</title>
+    <link rel="icon" href="/product/ProductCodes/images/logoMini.svg">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/product/ProductCodes/style/main.css" />
+    <link rel="stylesheet" href="/product/ProductCodes/style/responsive.css">
   </head>
   <body>
     <header class="header">
@@ -47,7 +49,7 @@
         <div class="heroTop">
           <div class="heroLeft">
             <i class="fa-solid fa-chart-bar"></i
-            ><span class="item-nameChange">ALL</span> COLLECTIONS
+            ><span class="item-nameChange">ALL</span> <p>COLLECTIONS</p>
           </div>
           <div class="heroRight">
             <ul class="heroUl">
@@ -67,17 +69,17 @@
           <div class="section1Left">
             <div class="sec1Left">
               <ul class="sec1__List">
-                <li class="hero-item ActiveHeroItem">All</li>
-                <li class="hero-item DeActiveHeroItem">New Arrivals</li>
-                <li class="hero-item DeActiveHeroItem">Hot Sale</li>
-                <li class="hero-item DeActiveHeroItem">Furniture</li>
-                <li class="hero-item DeActiveHeroItem">Amrature</li>
-                <li class="hero-item DeActiveHeroItem">Tabble</li>
-                <li class="hero-item DeActiveHeroItem">Chair</li>
-                <li class="hero-item DeActiveHeroItem">Sofa</li>
-                <li class="hero-item DeActiveHeroItem">Mirrors</li>
-                <li class="hero-item DeActiveHeroItem">Stools</li>
-                <li class="hero-item DeActiveHeroItem">Benches</li>
+                <a href="#" class="hero-item">All</a>
+                <a href="#" class="hero-item">New Arrivals</a>
+                <a href="#" class="hero-item">Hot Sale</a>
+                <a href="#" class="hero-item">Furniture</a>
+                <a href="#" class="hero-item">Amrature</a>
+                <a href="#" class="hero-item">Tabble</a>
+                <a href="#" class="hero-item">Chair</a>
+                <a href="#" class="hero-item">Sofa</a>
+                <a href="#" class="hero-item">Mirrors</a>
+                <a href="#" class="hero-item">Stools</a>
+                <a href="#" class="hero-item">Benches</a>
               </ul>
             </div>
           </div>
@@ -93,43 +95,31 @@
                 <button class="Btn__sec1Shop">SHOP NOW</button>
               </div>
               <div class="sec1Right__item2">
-                <img
-                  src="/product/ProductCodes/images/images.png"
-                  alt="images"
-                />
+                <img src="/product/ProductCodes/images/images.png" alt="images" />
               </div>
               <div class="sec1Right__item3">
                 <div class="Right__items">
-                  <img
-                    src="/product/ProductCodes/images/images2.png"
-                    alt="images"
-                  />
+                  <img src="/product/ProductCodes/images/images2.png" alt="images" />
                   <h4>$120</h4>
                   <p>Office Desk Chair</p>
                 </div>
                 <div class="Right__items">
-                  <img
-                    src="/product/ProductCodes/images/images3.png"
-                    alt="images"
-                  />
+                  <img src="/product/ProductCodes/images/images3.png" alt="images" />
                   <h4>$180</h4>
                   <p>Home Alisa Sofa</p>
                 </div>
                 <div class="Right__items">
-                  <img
-                    src="/product/ProductCodes/images/images4.png"
-                    alt="images"
-                  />
+                  <img src="/product/ProductCodes/images/images4.png" alt="images" />
                   <h4>$250</h4>
                   <p>Modern Chair</p>
                 </div>
               </div>
-              <div class="dots">
+              <!-- <div class="dots">
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -197,16 +187,229 @@
             <h3>TRENDING</h3>
             <div class="sec4__List-Name">
               <ul class="sec4__Name-List">
-                <li class="sec4__Name-item Active-Text">Top Products</li>
-                <li class="sec4__Name-item DeActive-Text">New Arrivals</li>
-                <li class="sec4__Name-item DeActive-Text">Best Sellers</li>
+                <li class="sec4__Name-item">Top Products</li>
+                <li class="sec4__Name-item">New Arrivals</li>
+                <li class="sec4__Name-item">Best Sellers</li>
               </ul>
             </div>
             <div class="sec4__Cards">
               <div class="sec4__Name-Card">
                 <div class="sec4__Card_List">
                   <div class="Card_item">
-                    <div class="Card-images"></div>
+                    <div class="Card-images">
+                      <div class="Card_title">new</div>
+                      <div class="Card_Btns">
+                        <div class="card__btn">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-regular fa-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Card-text">
+                      <div class="Card-category">Chair</div>
+                      <div class="Card-name">Minimal iconic chair</div>
+                      <div class="Card-price">
+                        <div class="Cards-price">
+                          <div class="Card-Price__new">$120</div>
+                          <div class="Card-Price__old">$150</div>
+                        </div>
+                        <div class="Cards-star">
+                          <div class="rating">
+                            <input
+                              value="5"
+                              name="rating"
+                              id="star5"
+                              type="radio"
+                            />
+                            <label for="star5"></label>
+                            <input
+                              value="4"
+                              name="rating"
+                              id="star4"
+                              type="radio"
+                            />
+                            <label for="star4"></label>
+                            <input
+                              value="3"
+                              name="rating"
+                              id="star3"
+                              type="radio"
+                            />
+                            <label for="star3"></label>
+                            <input
+                              value="2"
+                              name="rating"
+                              id="star2"
+                              type="radio"
+                            />
+                            <label for="star2"></label>
+                            <input
+                              value="1"
+                              name="rating"
+                              id="star1"
+                              type="radio"
+                            />
+                            <label for="star1"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec4__Cards">
+              <div class="sec4__Name-Card">
+                <div class="sec4__Card_List">
+                  <div class="Card_item">
+                    <div class="Card-images">
+                      <div class="Card_title">new</div>
+                      <div class="Card_Btns">
+                        <div class="card__btn">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-regular fa-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Card-text">
+                      <div class="Card-category">Chair</div>
+                      <div class="Card-name">Minimal iconic chair</div>
+                      <div class="Card-price">
+                        <div class="Cards-price">
+                          <div class="Card-Price__new">$120</div>
+                          <div class="Card-Price__old">$150</div>
+                        </div>
+                        <div class="Cards-star">
+                          <div class="rating">
+                            <input
+                              value="5"
+                              name="rating"
+                              id="star5"
+                              type="radio"
+                            />
+                            <label for="star5"></label>
+                            <input
+                              value="4"
+                              name="rating"
+                              id="star4"
+                              type="radio"
+                            />
+                            <label for="star4"></label>
+                            <input
+                              value="3"
+                              name="rating"
+                              id="star3"
+                              type="radio"
+                            />
+                            <label for="star3"></label>
+                            <input
+                              value="2"
+                              name="rating"
+                              id="star2"
+                              type="radio"
+                            />
+                            <label for="star2"></label>
+                            <input
+                              value="1"
+                              name="rating"
+                              id="star1"
+                              type="radio"
+                            />
+                            <label for="star1"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec4__Cards">
+              <div class="sec4__Name-Card">
+                <div class="sec4__Card_List">
+                  <div class="Card_item">
+                    <div class="Card-images">
+                      <div class="Card_title">new</div>
+                      <div class="Card_Btns">
+                        <div class="card__btn">
+                          <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="card__btn">
+                          <i class="fa-regular fa-eye"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Card-text">
+                      <div class="Card-category">Chair</div>
+                      <div class="Card-name">Minimal iconic chair</div>
+                      <div class="Card-price">
+                        <div class="Cards-price">
+                          <div class="Card-Price__new">$120</div>
+                          <div class="Card-Price__old">$150</div>
+                        </div>
+                        <div class="Cards-star">
+                          <div class="rating">
+                            <input
+                              value="5"
+                              name="rating"
+                              id="star5"
+                              type="radio"
+                            />
+                            <label for="star5"></label>
+                            <input
+                              value="4"
+                              name="rating"
+                              id="star4"
+                              type="radio"
+                            />
+                            <label for="star4"></label>
+                            <input
+                              value="3"
+                              name="rating"
+                              id="star3"
+                              type="radio"
+                            />
+                            <label for="star3"></label>
+                            <input
+                              value="2"
+                              name="rating"
+                              id="star2"
+                              type="radio"
+                            />
+                            <label for="star2"></label>
+                            <input
+                              value="1"
+                              name="rating"
+                              id="star1"
+                              type="radio"
+                            />
+                            <label for="star1"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -214,7 +417,622 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="special-box">
+          <div class="special-title">
+            <h3>SPECIAL OFFER</h3>
+          </div>
+          <div class="special-list">
+            <div class="special-left">
+              <div class="special-left-title">
+                <span class="special-discount">40</span>% off
+              </div>
+              <div class="special-left-name">
+                <h4>Living Room Furniture</h4>
+              </div>
+              <div class="special-left-deck">
+                <p>
+                  You don't have a chair. Are you ready for growth? Shop with us
+                  40% discount!
+                </p>
+              </div>
+              <div class="special-left-btns">
+                <div class="Cards-price">
+                  <div class="Card-Price__new">$150</div>
+                  <div class="Card-Price__old">$250</div>
+                </div>
+                <button>SHOP NOW</button>
+              </div>
+              <div class="special-left-discount">
+                <div class="left-discount-day">
+                  <h4>10</h4>
+                  DAYS
+                </div>
+                <div class="left-discount-day">
+                  <h4>10</h4>
+                  HRS
+                </div>
+                <div class="left-discount-day">
+                  <h4>10</h4>
+                  MIN
+                </div>
+                <div class="left-discount-day">
+                  <h4>10</h4>
+                  SECS
+                </div>
+              </div>
+            </div>
+            <div class="special-right">
+              <div class="special-left-title">
+                <span class="special-discount">50</span>% off
+              </div>
+              <div class="special-left-name">
+                <h4>Modern chair</h4>
+              </div>
+              <div class="special-left-deck">
+                <p>
+                  Hot chairs of the modern era are now available in our stock.
+                </p>
+              </div>
+              <div class="special-left-btns">
+                <div class="Cards-price">
+                  <div class="Card-Price__new">$75</div>
+                  <div class="Card-Price__old">$150</div>
+                </div>
+                <button>SHOP NOW</button>
+              </div>
+              <div class="special-left-discount">
+                <div class="left-discount-day">
+                  <h4>10</h4>
+                  DAYS
+                </div>
+                <div class="left-discount-day">
+                  <h4>10</h4>
+                  HRS
+                </div>
+                <div class="left-discount-day">
+                  <h4>10</h4>
+                  MIN
+                </div>
+                <div class="left-discount-day">
+                  <h4>10</h4>
+                  SECS
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="trending-box">
+          <div class="trending-title">
+            <h3>OUR PRODUCTS</h3>
+          </div>
+          <div class="trending__list-Name">
+            <ul class="trending__Name-List">
+              <li class="trending-item">All Products</li>
+              <li class="trending-item">Best Sellers</li>
+              <li class="trending-item">New Arrivals</li>
+              <li class="trending-item">Todays Deals</li>
+            </ul>
+          </div>
+          <div class="trending-items">
+            <div class="tranding-item-List">
+              <div class="Card_item">
+                <div class="Card-images">
+                  <div class="Card_title">new</div>
+                  <div class="Card_Btns">
+                    <div class="card__btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="Card-text">
+                  <div class="Card-category">Chair</div>
+                  <div class="Card-name">Minimal iconic chair</div>
+                  <div class="Card-price">
+                    <div class="Cards-price">
+                      <div class="Card-Price__new">$120</div>
+                      <div class="Card-Price__old">$150</div>
+                    </div>
+                    <div class="Cards-star">
+                      <div class="rating">
+                        <input
+                          value="5"
+                          name="rating"
+                          id="star5"
+                          type="radio"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          value="4"
+                          name="rating"
+                          id="star4"
+                          type="radio"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          value="3"
+                          name="rating"
+                          id="star3"
+                          type="radio"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          value="2"
+                          name="rating"
+                          id="star2"
+                          type="radio"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          value="1"
+                          name="rating"
+                          id="star1"
+                          type="radio"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="next-List-btns">
+              <div class="btn-next-page">
+                <p>Next page</p>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+              <div class="select-page-inp">
+                <p>Page</p>
+                <input type="text" value="1" id="valuePage" />
+                <p>of 100</p>
+                <div class="tranding-value-btn">
+                  <button class="tranding-inc">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button class="tranding-dec">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-items">
+            <div class="tranding-item-List">
+              <div class="Card_item">
+                <div class="Card-images">
+                  <div class="Card_title">new</div>
+                  <div class="Card_Btns">
+                    <div class="card__btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="Card-text">
+                  <div class="Card-category">Chair</div>
+                  <div class="Card-name">Minimal iconic chair</div>
+                  <div class="Card-price">
+                    <div class="Cards-price">
+                      <div class="Card-Price__new">$120</div>
+                      <div class="Card-Price__old">$150</div>
+                    </div>
+                    <div class="Cards-star">
+                      <div class="rating">
+                        <input
+                          value="5"
+                          name="rating"
+                          id="star5"
+                          type="radio"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          value="4"
+                          name="rating"
+                          id="star4"
+                          type="radio"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          value="3"
+                          name="rating"
+                          id="star3"
+                          type="radio"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          value="2"
+                          name="rating"
+                          id="star2"
+                          type="radio"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          value="1"
+                          name="rating"
+                          id="star1"
+                          type="radio"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="next-List-btns">
+              <div class="btn-next-page">
+                <p>Next page</p>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+              <div class="select-page-inp">
+                <p>Page</p>
+                <input type="text" value="1" id="valuePage" />
+                <p>of 100</p>
+                <div class="tranding-value-btn">
+                  <button class="tranding-inc">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button class="tranding-dec">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-items">
+            <div class="tranding-item-List">
+              <div class="Card_item">
+                <div class="Card-images">
+                  <div class="Card_title">new</div>
+                  <div class="Card_Btns">
+                    <div class="card__btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="Card-text">
+                  <div class="Card-category">Chair</div>
+                  <div class="Card-name">Minimal iconic chair</div>
+                  <div class="Card-price">
+                    <div class="Cards-price">
+                      <div class="Card-Price__new">$120</div>
+                      <div class="Card-Price__old">$150</div>
+                    </div>
+                    <div class="Cards-star">
+                      <div class="rating">
+                        <input
+                          value="5"
+                          name="rating"
+                          id="star5"
+                          type="radio"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          value="4"
+                          name="rating"
+                          id="star4"
+                          type="radio"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          value="3"
+                          name="rating"
+                          id="star3"
+                          type="radio"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          value="2"
+                          name="rating"
+                          id="star2"
+                          type="radio"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          value="1"
+                          name="rating"
+                          id="star1"
+                          type="radio"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="next-List-btns">
+              <div class="btn-next-page">
+                <p>Next page</p>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+              <div class="select-page-inp">
+                <p>Page</p>
+                <input type="text" value="1" id="valuePage" />
+                <p>of 100</p>
+                <div class="tranding-value-btn">
+                  <button class="tranding-inc">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button class="tranding-dec">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-items">
+            <div class="tranding-item-List">
+              <div class="Card_item">
+                <div class="Card-images">
+                  <div class="Card_title">new</div>
+                  <div class="Card_Btns">
+                    <div class="card__btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <div class="card__btn">
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="Card-text">
+                  <div class="Card-category">Chair</div>
+                  <div class="Card-name">Minimal iconic chair</div>
+                  <div class="Card-price">
+                    <div class="Cards-price">
+                      <div class="Card-Price__new">$120</div>
+                      <div class="Card-Price__old">$150</div>
+                    </div>
+                    <div class="Cards-star">
+                      <div class="rating">
+                        <input
+                          value="5"
+                          name="rating"
+                          id="star5"
+                          type="radio"
+                        />
+                        <label for="star5"></label>
+                        <input
+                          value="4"
+                          name="rating"
+                          id="star4"
+                          type="radio"
+                        />
+                        <label for="star4"></label>
+                        <input
+                          value="3"
+                          name="rating"
+                          id="star3"
+                          type="radio"
+                        />
+                        <label for="star3"></label>
+                        <input
+                          value="2"
+                          name="rating"
+                          id="star2"
+                          type="radio"
+                        />
+                        <label for="star2"></label>
+                        <input
+                          value="1"
+                          name="rating"
+                          id="star1"
+                          type="radio"
+                        />
+                        <label for="star1"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="next-List-btns">
+              <div class="btn-next-page">
+                <p>Next page</p>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+              <div class="select-page-inp">
+                <p>Page</p>
+                <input type="text" value="1" id="valuePage" />
+                <p>of 100</p>
+                <div class="tranding-value-btn">
+                  <button class="tranding-inc">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button class="tranding-dec">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="blogs">
+          <div class="blogs-title">
+            <h3>What Our Customer Says</h3>
+          </div>
+          <div class="blog-box">
+            <div class="blog-leftBtn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="blog-items">
+              <div class="blog-item">
+                <div class="blog-img">
+                  <img src="/product/ProductCodes/images/imagesUser.png" alt="fa-user" />
+                </div>
+                <p>
+                  I like Furniking.com and as compared to other company it's
+                  polices and customers support is very good easy to reach.,
+                  also many time they unable to delivered. The ultricies are
+                  pregnant while the quis is suspended. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisist amet.
+                </p>
+                <h4>Angelina Joly</h4>
+                <span>Co-founder</span>
+              </div>
+            </div>
+            <div class="blog-rightBtn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="articles">
+          <div class="articles-box">
+            <div class="articles-title">
+              <h3>Our Latest Articles</h3>
+            </div>
+            <div class="article-List">
+              <div class="article-items article-img1">
+                <div class="article-item">
+                  <div>
+                    <span><i class="fa-solid fa-tag"></i>Furniture</span>
+                    <p>23 September 2022</p>
+                  </div>
+                  <h4>Begineer guide buying minimal sofa</h4>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+              <div class="article-items article-img2">
+                <div class="article-item">
+                  <div>
+                    <span><i class="fa-solid fa-tag"></i>Table</span>
+                    <p>23 September 2022</p>
+                  </div>
+                  <h4>Buying best minimal computer table</h4>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+              <div class="article-items article-img3">
+                <div class="article-item">
+                  <div>
+                    <span><i class="fa-solid fa-tag"></i>Bench</span>
+                    <p>23 September 2022</p>
+                  </div>
+                  <h4>How to choose best modern bench</h4>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+              <div class="article-items article-img4">
+                <div class="article-item">
+                  <div>
+                    <span><i class="fa-solid fa-tag"></i>Chair</span>
+                    <p>23 September 2022</p>
+                  </div>
+                  <h4>Best Summer Outfit Style in this Country</h4>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-List">
+            <div class="footer-item">
+              <div class="footer-top">
+                <a href="/index.html"
+                  ><img src="/product/ProductCodes/images/Logo.svg" alt="Furniking"
+                /></a>
+              </div>
+              <div class="footer-items">
+                <p>
+                  Funking is the a popular Ecommerce site. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+              </div>
+              <div class="footer-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
+            </div>
+            <div class="footer-item2">
+              <div class="footer-top">
+                <h4>Help</h4>
+              </div>
+              <div class="footer-items">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Track Your Order</a>
+              </div>
+            </div>
+            <div class="footer-item3">
+              <div class="footer-top">
+                <h4>Store</h4>
+              </div>
+              <div class="footer-items">
+                <a href="#">Furniture</a>
+                <a href="#">Tabble</a>
+                <a href="#">Sofa</a>
+                <a href="#">Other</a>
+              </div>
+            </div>
+            <div class="footer-item4">
+              <div class="footer-top">
+                <h4>Supports</h4>
+              </div>
+              <div class="footer-items">
+                <a href="#">Feedbcak</a>
+                <a href="#">Contact us</a>
+                <a href="#">Download app</a>
+                <a href="#">Terms conditins</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2021 Funking - All rights reserved.</p>
+            <div class="footer-Boot-list">
+              <a href="#">Privacy</a>
+              <a href="#">Security</a>
+              <a href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="/product/ProductCodes/js/main.js"></script>
   </body>
 </html>

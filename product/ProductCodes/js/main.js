@@ -1,67 +1,47 @@
-const url = `https://fakestoreapi.com/products`;
-fetch(url)
-      .then(response => response.json())
-      .then(data => console.log(data))
-window.addEventListener("DOMContentLoaded", function () {
-  let 
-})
-const tabsParent = document.querySelector(".sec1__List");
-const tabs = document.querySelectorAll(".hero-item");
-const tabsContent = document.querySelectorAll(".tabcontent");
-let itemHeroText = document.querySelector(".item-nameChange");
-let textNameSlide = document.querySelector(".textName-Slide");
-function hideTabContent() {
-  // tabsContent.forEach((item) => {
-  //   item.classList.add("DeActiveHeroItem");
-  //   item.classList.remove("ActiveHeroItem");
-  // });
+const tabs = document.querySelectorAll(".sec4__Name-item");
+const tabsContent = document.querySelectorAll(".sec4__Cards");
+const TrendingTabs = document.querySelectorAll(".trending-item");
+const TrendingContent = document.querySelectorAll(".trending-items");
 
-  tabs.forEach((item) => {
-    item.classList.remove("ActiveHeroItem");
+const showContent = (elements, tabs, index) => {
+  elements.forEach((item, i) => {
+    const isActive = i === index;
+    item.classList.toggle("ActiveContent", isActive);
+    item.classList.toggle("DeActiveContent", !isActive);
   });
-}
 
-function showTabContent(i = 0) {
-  // tabsContent[i].classList.add("ActiveHeroItem");
-  // tabsContent[i].classList.remove("DeActiveHeroItem");
-  tabs[i].classList.add("ActiveHeroItem");
-  tabs[i].classList.remove("DeActiveHeroItem");
-}
+  tabs.forEach((item, i) => {
+    const isActive = i === index;
+    item.classList.toggle("Active-Text", isActive);
+    item.classList.toggle("DeActive-Text", !isActive);
+  });
+};
 
-hideTabContent();
-showTabContent();
+const hideContent = (elements, tabs) => {
+  elements.forEach((item) => {
+    item.classList.add("DeActiveContent");
+    item.classList.remove("ActiveContent");
+  });
+  tabs.forEach((item) => {
+    item.classList.add("DeActive-Text");
+    item.classList.remove("Active-Text");
+  });
+};
 
-tabsParent.addEventListener("click", (event) => {
-  const target = event.target;
-  if (target && target.classList.contains("hero-item")) {
-    tabs.forEach((item, idx) => {
-      if (target === item) {
-        hideTabContent();
-        showTabContent(idx);
+// Tanlangan birinchi tabni Active qiling
+showContent(tabsContent, tabs, 0);
+showContent(TrendingContent, TrendingTabs, 0);
 
-      }
-    });
-  }
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    hideContent(tabsContent, tabs);
+    showContent(tabsContent, tabs, index);
+  });
 });
-const sec1RightItem3 = document.querySelector(".sec1Right__item3");
-const tabsSec1Right = document.querySelector(".Right__items");
-// function showTabItem(i=0){
-// tabsSec1Right[i]
-// }
-// showTabItem()
-// sec1RightItem3.addEventListener("click", (event) => {
-//   const target = event.target;
-//   console.log(target);
-//   if (target && target.classList.contains("Right__items")) {
-//     tabsSec1Right.forEach((item, idx) => {
-//       if (target === item) {
-//        showTabItem(idx)
-//       }
-//     });
-//   }
-// });
 
-sec1RightItem3.addEventListener("click", (event) => {
-
-
+TrendingTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    hideContent(TrendingContent, TrendingTabs);
+    showContent(TrendingContent, TrendingTabs, index);
+  });
 });
